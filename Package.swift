@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -25,11 +25,13 @@ let package = Package(
             url: "https://github.com/segmentio/analytics-swift.git",
             from: "1.4.7"
         ),
-		.package(
-			name: "Firebase",
-			url: "https://github.com/firebase/firebase-ios-sdk",
-			from: "10.0.0"
-		)
+        // NOTE: The repackaging of the firebase sdk results in a mismatch in name and a duplicate firebase package dependency without the deprecated named version
+        // NOTE: There may be a workaround for this to fix the identity between the app dependency and the analytics dependency but skipping research for time
+            .package(
+                name: "firebase-ios-sdk",
+                url: "https://github.com/reveri-health/firebase-ios-sdk-xcframeworks",
+                branch: "release/10.17.0"
+            )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -39,7 +41,7 @@ let package = Package(
             dependencies: ["Segment",
                             .product(
                                 name: "FirebaseAnalytics",
-                                package: "Firebase")
+                                package: "firebase-ios-sdk")
                           ]
         ),
         
