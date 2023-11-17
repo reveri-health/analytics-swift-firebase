@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "analytics-swift",
+      "identity" : "analytics-swift-flush-fix",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/segmentio/analytics-swift.git",
+      "location" : "https://github.com/reveri-health/analytics-swift-flush-fix",
       "state" : {
-        "revision" : "c8fd5fdf59299f00b3e4303a1b12a6d88893bf56",
-        "version" : "1.4.7"
+        "branch" : "bsneed/operatingMode",
+        "revision" : "1e91157c204caef06e18086aa7f52e872fadf8da"
       }
     },
     {

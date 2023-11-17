@@ -22,8 +22,8 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(
             name: "Segment",
-            url: "https://github.com/segmentio/analytics-swift.git",
-            from: "1.4.7"
+            url: "https://github.com/reveri-health/analytics-swift-flush-fix",
+            branch: "bsneed/operatingMode"
         ),
         // NOTE: The repackaging of the firebase sdk results in a mismatch in name and a duplicate firebase package dependency without the deprecated named version
         // NOTE: There may be a workaround for this to fix the identity between the app dependency and the analytics dependency but skipping research for time
