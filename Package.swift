@@ -23,7 +23,7 @@ let package = Package(
         .package(
             name: "Segment",
             url: "https://github.com/reveri-health/analytics-swift-flush-fix",
-            branch: "main"
+            revision: "56b1c1978e361f3c7c10213b3cff0096071ec6c3"
         ),
         // NOTE: The repackaging of the firebase sdk results in a mismatch in name and a duplicate firebase package dependency without the deprecated named version
         // NOTE: There may be a workaround for this to fix the identity between the app dependency and the analytics dependency but skipping research for time

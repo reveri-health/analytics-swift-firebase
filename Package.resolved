@@ -5,8 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/reveri-health/analytics-swift-flush-fix",
       "state" : {
-        "branch" : "main",
-        "revision" : "c4bb71dea0b38c179b2d87b56ee096a06ce2ea86"
+        "revision" : "56b1c1978e361f3c7c10213b3cff0096071ec6c3"
       }
     },
     {
