@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/reveri-health/firebase-ios-sdk-xcframeworks",
       "state" : {
-        "branch" : "release/10.17.0",
-        "revision" : "49977b8c2ae77be329c81d514408796ebc36d785"
+        "revision" : "cf4eebe8e62d755205f8a0835794516f11470e41",
+        "version" : "10.20.0"
       }
     },
     {

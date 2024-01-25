@@ -30,7 +30,7 @@ let package = Package(
             .package(
                 name: "firebase-ios-sdk",
                 url: "https://github.com/reveri-health/firebase-ios-sdk-xcframeworks",
-                branch: "release/10.17.0"
+                    from: "10.20.0"
             )
     ],
     targets: [
