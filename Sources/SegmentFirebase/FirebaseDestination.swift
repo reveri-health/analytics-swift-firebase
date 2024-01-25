@@ -118,6 +118,11 @@ public class FirebaseDestination: DestinationPlugin {
         if let eventName = event.name {
             var parameters: [String: Any] = [FirebaseAnalytics.AnalyticsParameterScreenName: eventName]
             
+            if let properties = event.properties?.dictionaryValue {
+                let propertiesParameters = returnMappedFirebaseParameters(properties, for: FirebaseDestination.mappedKeys)
+                parameters = parameters.merging(propertiesParameters) { (current, _) in current }
+            }
+
             if let campaign = event.context?.dictionaryValue?["campaign"] as? [String: Any] {
                 let campaignParameters = returnMappedFirebaseParameters(campaign, for: FirebaseDestination.campaignMappedKeys)
                 parameters = parameters.merging(campaignParameters) { (current, _) in current }
@@ -196,13 +201,19 @@ extension FirebaseDestination {
     }
     
     // Makes sure all traits are string based for Firebase API
-    func mapToStrings(_ mapDictionary: [String: Any], finalize: (String, String) -> Void) {
+    func mapToStrings(_ mapDictionary: [String: Any?], finalize: (String, String) -> Void) {
         
         for (key, data) in mapDictionary {
-            var dataString = data as? String ?? "\(data)"
-            let keyString = key.replacingOccurrences(of: " ", with: "_")
-            dataString = dataString.trimmingCharacters(in: .whitespacesAndNewlines)
-            finalize(keyString, dataString)
+
+            // Since dictionary values can be Optional we have to unwrap them
+            // before encoding so that we don't encode them as "Optional(*)"
+            // Note: nil values are NOT encoded.
+            if let d = data {
+                var dataString = d as? String ?? "\(d)"
+                let keyString = key.replacingOccurrences(of: " ", with: "_")
+                dataString = dataString.trimmingCharacters(in: .whitespacesAndNewlines)
+                finalize(keyString, dataString)
+            }
         }
     }
 }
@@ -214,7 +225,7 @@ private struct FirebaseSettings: Codable {
 
 private extension FirebaseDestination {
     
-    static let mappedValues = ["Product Clicked": FirebaseAnalytics.AnalyticsEventSelectContent,
+    static let mappedValues = ["Product Clicked": FirebaseAnalytics.AnalyticsEventSelectItem,
                                "Product Viewed": FirebaseAnalytics.AnalyticsEventViewItem,
                                "Product Added": FirebaseAnalytics.AnalyticsEventAddToCart,
                                "Product Removed": FirebaseAnalytics.AnalyticsEventRemoveFromCart,
