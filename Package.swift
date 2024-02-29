@@ -28,7 +28,7 @@ let package = Package(
         ),
         .package(
             name: "Firebase",
-            url: "https://github.com/firebase/firebase-ios-sdk",
+            url: "https://github.com/reveri-health/firebase-ios-sdk-xcframeworks",
             from: "10.21.0"
         )
     ],
