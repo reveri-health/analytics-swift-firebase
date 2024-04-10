@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/segmentio/analytics-swift.git",
         "state": {
           "branch": null,
-          "revision": "33f07bd5e4d216de92a163a8edad2c3216087cd9",
-          "version": "1.5.5"
+          "revision": "7eeb2abf8452153af056baae5369679589f10936",
+          "version": "1.5.9"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/reveri-health/firebase-ios-sdk-xcframeworks",
         "state": {
           "branch": null,
-          "revision": "57c602859e67fe039f5dea751ddb1275b12785e9",
-          "version": "10.21.0"
+          "revision": "958ad4a8662e1961eb0ade49c79142ca9b1ddbc0",
+          "version": "10.24.0"
         }
       },
       {
