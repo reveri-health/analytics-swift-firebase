@@ -36,15 +36,9 @@ let package = Package(
         .target(
             name: "SegmentFirebase",
             dependencies: [
-                .target(name: "FirebaseBinaryTarget"),
                 .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
                 .product(name: "Segment", package: "analytics-swift")
             ]
-        ),
-        .binaryTarget(
-            name: "FirebaseBinaryTarget",
-            url: "https://github.com/firebase/firebase-ios-sdk/releases/download/10.28.0/Firebase.zip",
-            checksum: "6ede63392abaad206197f3e3615d30731274ed01953db630f49c2c6748c95918"
         ),
         // TESTS ARE HANDLED VIA THE EXAMPLE APP.
     ]
