@@ -25,8 +25,8 @@ let package = Package(
             url: "https://github.com/segmentio/analytics-swift.git",
             Range<Version>(
                 uncheckedBounds: (
-                    lower: Version(1,4,7),
-                    upper: Version(1,4,7)
+                    lower: Version(1,5,9),
+                    upper: Version(1,5,9)
                 )
             )
         ),
