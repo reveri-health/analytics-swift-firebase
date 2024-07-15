@@ -1,43 +1,32 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Segment",
-        "repositoryURL": "https://github.com/segmentio/analytics-swift.git",
-        "state": {
-          "branch": null,
-          "revision": "f6f3a7fafcace7bcdbda329f9b309f31bf9a42a1",
-          "version": "1.5.11"
-        }
-      },
-      {
-        "package": "Firebase",
-        "repositoryURL": "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks",
-        "state": {
-          "branch": null,
-          "revision": "1aaa3de247d9cd57dd43ae060901b2de56f2951c",
-          "version": "10.29.0"
-        }
-      },
-      {
-        "package": "JSONSafeEncoding",
-        "repositoryURL": "https://github.com/segmentio/jsonsafeencoding-swift.git",
-        "state": {
-          "branch": null,
-          "revision": "af6a8b360984085e36c6341b21ecb35c12f47ebd",
-          "version": "2.0.0"
-        }
-      },
-      {
-        "package": "Sovran",
-        "repositoryURL": "https://github.com/segmentio/Sovran-Swift.git",
-        "state": {
-          "branch": null,
-          "revision": "24867f3e4ac62027db9827112135e6531b6f4051",
-          "version": "1.1.2"
-        }
+  "pins" : [
+    {
+      "identity" : "analytics-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/segmentio/analytics-swift.git",
+      "state" : {
+        "revision" : "c8fd5fdf59299f00b3e4303a1b12a6d88893bf56",
+        "version" : "1.4.7"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "firebase-ios-sdk-xcframeworks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks",
+      "state" : {
+        "revision" : "1aaa3de247d9cd57dd43ae060901b2de56f2951c",
+        "version" : "10.29.0"
+      }
+    },
+    {
+      "identity" : "sovran-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/segmentio/Sovran-Swift.git",
+      "state" : {
+        "revision" : "24867f3e4ac62027db9827112135e6531b6f4051",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 2
 }
