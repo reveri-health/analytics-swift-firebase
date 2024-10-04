@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/segmentio/analytics-swift.git",
         "state": {
           "branch": null,
-          "revision": "7eeb2abf8452153af056baae5369679589f10936",
-          "version": "1.5.9"
+          "revision": "41df3103293bbed6f17489fcc28e16a6e495168d",
+          "version": "1.6.1"
         }
       },
       {
@@ -15,17 +15,17 @@
         "repositoryURL": "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks",
         "state": {
           "branch": null,
-          "revision": "1aaa3de247d9cd57dd43ae060901b2de56f2951c",
-          "version": "10.29.0"
+          "revision": "d3c04402036b8cfc08481344680f83e40c70856d",
+          "version": "11.2.0"
         }
       },
       {
-        "package": "JSONSafeEncoder",
-        "repositoryURL": "https://github.com/segmentio/jsonsafeencoder-swift.git",
+        "package": "JSONSafeEncoding",
+        "repositoryURL": "https://github.com/segmentio/jsonsafeencoding-swift.git",
         "state": {
           "branch": null,
-          "revision": "8b70dc8c01b7b041912e30e29d2b488a43f782ac",
-          "version": "1.0.1"
+          "revision": "af6a8b360984085e36c6341b21ecb35c12f47ebd",
+          "version": "2.0.0"
         }
       },
       {

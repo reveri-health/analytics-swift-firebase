@@ -25,8 +25,8 @@ let package = Package(
             url: "https://github.com/segmentio/analytics-swift.git",
             Range<Version>(
                 uncheckedBounds: (
-                    lower: Version(1,5,9),
-                    upper: Version(1,5,9)
+                    lower: Version(1,6,1),
+                    upper: Version(1,6,1)
                 )
             )
         ),
@@ -35,8 +35,8 @@ let package = Package(
             url: "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks",
             Range<Version>(
                 uncheckedBounds: (
-                    lower: Version(10,29,0),
-                    upper: Version(10,29,0)
+                    lower: Version(11,2,0),
+                    upper: Version(11,2,0)
                 )
             )
         )
