@@ -33,12 +33,7 @@ let package = Package(
         .package(
             name: "Firebase",
             url: "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks",
-            Range<Version>(
-                uncheckedBounds: (
-                    lower: Version(11,6,0),
-                    upper: Version(11,6,0)
-                )
-            )
+            .upToNextMajor(from: "11.7.0")
         )
     ],
     targets: [
