@@ -22,7 +22,7 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(
             name: "Segment",
-            url: "https://github.com/segmentio/analytics-swift.git",
+            url: "https://github.com/segmentio/analytics-swift",
             Range<Version>(
                 uncheckedBounds: (
                     lower: Version(1,7,2),
