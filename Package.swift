@@ -33,7 +33,7 @@ let package = Package(
         .package(
             name: "Firebase",
             url: "https://github.com/reveri-health/firebase-ios-sdk-xcframeworks",
-            .upToNextMinor(from: "11.12.0")
+            from: "11.14.0"
         )
     ],
     targets: [
