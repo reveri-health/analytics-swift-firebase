@@ -23,12 +23,7 @@ let package = Package(
         .package(
             name: "Segment",
             url: "https://github.com/segmentio/analytics-swift",
-            Range<Version>(
-                uncheckedBounds: (
-                    lower: Version(1,7,2),
-                    upper: Version(1,7,2)
-                )
-            )
+            from: "1.7.2"
         ),
         .package(
             name: "Firebase",
